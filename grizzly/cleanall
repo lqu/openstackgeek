@@ -1,0 +1,9 @@
+#!/bin/bash
+ 
+apt-get purge iscsitarget iscsitarget-source open-iscsi iscsitarget-dkms cinder-api cinder-scheduler cinder-volume  glance openstack-dashboard memcached  keystone  rabbitmq-server memcached python-memcache mysql-server python-mysqldb  vlan bridge-utils  kvm libvirt-bin pm-utils  ntp nova-api nova-cert novnc nova-consoleauth nova-scheduler nova-novncproxy nova-doc nova-conductor nova-compute-kvm quantum-server quantum-plugin-linuxbridge quantum-plugin-linuxbridge-agent dnsmasq quantum-dhcp-agent quantum-l3-agent  cpu-checker  ubuntu-cloud-keyring nova-api nova-cert novnc nova-consoleauth nova-scheduler nova-novncproxy nova-doc nova-conductor nova-compute-kvm 
+
+apt-get autoremove
+
+./openstack_drop_databases.sh
+
+
